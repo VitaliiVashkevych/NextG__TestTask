@@ -1,0 +1,27 @@
+.main__certificates {
+  margin: 80px 0;
+
+  @include on-mobile {
+    flex-direction: column;
+    gap: 20px;
+    margin: 40px auto;
+  }
+}
+
+.main__certificates--wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.certificates__line {
+  width: 147px;
+  height: 1px;
+  background-color: $bgc-button-yellow;
+}
+
+.certificates__image {
+  max-height: 80px;
+}

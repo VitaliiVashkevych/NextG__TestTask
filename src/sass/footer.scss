@@ -1,0 +1,65 @@
+.footer__container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.footer__wrapper {
+  grid-area: 1 / 1 / -1 / 2;
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__nav--company {
+  grid-area: 1 / 2 / -1 / 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: $ffRubik500;
+}
+
+.footer__nav--follow-us {
+  grid-area: 1 / 3 / -1 / 4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: $ffRubik500;
+}
+
+.footer__nav--title {
+  margin-bottom: 8px;
+  font-size: 24px;
+}
+
+.footer__copyright {
+  text-align: center;
+}
+
+.footer__nav--list {
+  list-style: none;
+}
+
+.footer__nav--link {
+  text-decoration: none;
+  color: $fc-secondary;
+  transition: all 0.3s ease;
+
+  &:hover {
+    color: $bgc-button-blue;
+  }
+}
+
+.footer {
+  padding-top: 60px;
+  background-color: $bgc-footer;
+}
+
+.footer__copyright {
+  padding: 40px;
+}
+
+.footer__nav--list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}

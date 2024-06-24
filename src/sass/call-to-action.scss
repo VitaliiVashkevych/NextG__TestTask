@@ -1,0 +1,25 @@
+.main__call-to-action {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 120px;
+}
+
+.call-to-action__title {
+  text-align: center;
+  font-family: $ffRubik700;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 50px;
+  color: $fc-main;
+}
+
+.call-to-action__description {
+  text-align: center;
+  margin: 48px 0;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+  color: $fc-secondary;
+}

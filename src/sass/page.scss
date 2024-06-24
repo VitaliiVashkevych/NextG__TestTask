@@ -1,0 +1,41 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li,
+a,
+button {
+  margin: 0;
+  padding: 0;
+}
+
+.page {
+  font-family: $ffOpenSans500;
+  scroll-behavior: smooth;
+  min-width: 400px;
+
+  &__body {
+    position: relative;
+    margin: 0;
+  }
+}
+
+.bgc-1 {
+  background: linear-gradient(
+    to bottom,
+    rgb(245, 253, 250) 0,
+    rgb(245, 253, 250) 100vh,
+    white 100vh,
+    white 300vh,
+    rgb(245, 253, 250) 300vh,
+    rgb(245, 253, 250) 400vh,
+    white 400vh,
+    white 500vh,
+    rgb(245, 253, 250) 500vh,
+    rgb(245, 253, 250) 600vh
+  );
+}

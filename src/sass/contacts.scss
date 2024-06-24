@@ -1,0 +1,45 @@
+.main__contacts {
+  background-color: $bgc-button-yellow;
+}
+
+.contacts__address {
+  display: flex;
+  align-self: center;
+
+  @include on-mobile {
+    align-self: unset;
+  }
+}
+
+.contacts__address--wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.address__image {
+  height: min-content;
+  margin-right: 14px;
+}
+
+.main__contacts .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 133px;
+
+  @include on-mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    height: auto;
+    padding: 20px;
+    row-gap: 20px;
+    align-content: start;
+  }
+}
+
+.address__description {
+  text-decoration: none;
+  color: $fc-main;
+}

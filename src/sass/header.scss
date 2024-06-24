@@ -1,0 +1,90 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 80px;
+
+  &__logo {
+    width: 161px;
+    height: 40px;
+    background: $bgc-logo;
+  }
+
+  &__menu {
+    display: none;
+
+    @include on-mobile {
+      display: flex;
+      justify-self: center;
+      align-self: center;
+    }
+  }
+
+  &__container {
+    display: flex;
+    align-items: center;
+    gap: 45px;
+
+    @include on-mobile {
+      display: none;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    column-gap: 45px;
+  }
+
+  &__link {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: center;
+    color: $fc-secondary;
+    transition: $transitionProps;
+
+    &:hover {
+      color: $bgc-button-blue;
+    }
+  }
+
+  &__contact-us {
+    display: block;
+    align-content: center;
+    font-size: 14px;
+    font-weight: 500;
+    color: $color-white;
+    text-decoration: none;
+    height: 100%;
+    width: 100%;
+
+    &:hover {
+      color: $fc-main;
+    }
+  }
+}
+
+.header__image--background {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 40%;
+
+  background-image: url(../assets/images/header-background.png);
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 0 0 0 150px;
+  z-index: -1;
+  opacity: 0.1;
+}
+
+.section__title {
+  font-family: $ffRubik700;
+  font-size: 72px;
+  line-height: 82px;
+  text-align: left;
+}

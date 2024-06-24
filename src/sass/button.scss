@@ -1,0 +1,25 @@
+.button {
+  width: 123px;
+  height: 47px;
+  border: none;
+  border-radius: 8px;
+  background-color: $bgc-button-blue;
+  transition: $transitionProps;
+
+  &:hover {
+    background-color: $color-white;
+  }
+
+  &--highlighted {
+    width: 123px;
+    height: 47px;
+    border: 1px solid $bgc-button-yellow;
+    border-radius: 8px;
+    background-color: transparent;
+    transition: $transitionProps;
+
+    &:hover {
+      background-color: $bgc-button-yellow;
+    }
+  }
+}

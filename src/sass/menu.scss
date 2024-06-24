@@ -1,0 +1,64 @@
+.header__menu {
+  display: none;
+
+  @include on-mobile {
+    display: flex;
+    cursor: pointer;
+  }
+
+  &--icon {
+    width: 24px;
+    height: 24px;
+    background-size: cover;
+    background-image: url(./../assets/icons/icon-burger-menu.svg);
+  }
+}
+
+.menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 2;
+
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  height: 100vh;
+  padding: 20px;
+
+  font-size: 22px;
+  line-height: 100%;
+  letter-spacing: 2px;
+  text-align: left;
+  overflow: auto;
+
+  transition: $transitionProps;
+  opacity: 0;
+  transform: translateX(-100%);
+  pointer-events: none;
+  background-color: $color-white;
+
+  &:target {
+    opacity: 1;
+    transform: translateX(0);
+
+    pointer-events: all;
+  }
+
+  &__icon {
+    display: block;
+    background-image: url(./../assets/icons/icon-close.svg);
+    width: 24px;
+    height: 24px;
+    background-size: cover;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    column-gap: 45px;
+  }
+}
