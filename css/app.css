@@ -1,27 +1,3 @@
-@font-face {
-  font-family: "Rubik", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 500;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Rubik700";
-  font-style: normal;
-  font-weight: 700;
-  src: url(./dist/fonts/Rubik-VariableFont_wght);
-}
-@font-face {
-  font-family: "Open Sans500";
-  font-style: normal;
-  font-weight: 500;
-  src: url(./dist/fonts/OpenSans-VariableFont_wdth.ttf);
-}
-@font-face {
-  font-family: "Open Sans700";
-  font-style: normal;
-  font-weight: 700;
-  src: url(./dist/fonts/OpenSans-VariableFont_wdth.ttf);
-}
 .container {
   max-width: 1140px;
   margin-inline: auto;
@@ -44,7 +20,10 @@ button {
 }
 
 .page {
-  font-family: Open Sans500;
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
   scroll-behavior: smooth;
   min-width: 400px;
 }
@@ -99,7 +78,6 @@ button {
 .header__link {
   text-decoration: none;
   font-size: 16px;
-  font-weight: 400;
   line-height: 30px;
   text-align: center;
   color: rgb(87, 92, 116);
@@ -137,7 +115,10 @@ button {
 }
 
 .section__title {
-  font-family: Rubik700;
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
   font-size: 72px;
   line-height: 82px;
   text-align: left;
@@ -216,7 +197,10 @@ button {
 .section__name {
   color: rgb(255, 184, 0);
   margin-bottom: 30px;
-  font-family: Rubik500;
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
 }
 
 .section__title {
@@ -225,10 +209,6 @@ button {
   line-height: 82px;
   text-align: left;
   margin-bottom: 40px;
-  font-family: "Rubik", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 500;
-  font-style: normal;
 }
 
 .section__image {
@@ -292,7 +272,10 @@ button {
 
 .benefit__title {
   margin-bottom: 8px;
-  font-family: Open Sans700;
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
 }
 
 .section__learn-more {
@@ -317,6 +300,10 @@ button {
   border-radius: 8px;
   background-color: rgb(27, 95, 193);
   transition: all 0.3s ease;
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
 }
 .button:hover {
   background-color: #fff;
@@ -328,6 +315,10 @@ button {
   border-radius: 8px;
   background-color: transparent;
   transition: all 0.3s ease;
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
 }
 .button--highlighted:hover {
   background-color: rgb(255, 184, 0);
@@ -393,10 +384,13 @@ button {
 
 .goods__title {
   margin-bottom: 26px;
-  font-family: Rubik700;
   font-size: 48px;
   line-height: 50px;
   text-align: left;
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
 }
 
 .info {
@@ -463,7 +457,10 @@ button {
 }
 
 .made-in__title {
-  font-family: Rubik700;
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
   font-size: 20px;
   font-weight: 700;
   line-height: 50px;
@@ -525,7 +522,10 @@ button {
 }
 
 .made-in__contact-us {
-  font-family: Open Sans700;
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
   font-size: 14px;
   line-height: 24px;
   text-align: left;
@@ -533,7 +533,10 @@ button {
 }
 
 .made-in__number {
-  font-family: Open Sans500;
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
   font-size: 24px;
   line-height: 24px;
   text-align: left;
@@ -621,7 +624,10 @@ button {
 .reasons__title {
   margin-bottom: 30px;
   text-align: left;
-  font-family: Rubik700;
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
   font-size: 48px;
   font-weight: 700;
   line-height: 50px;
@@ -675,7 +681,10 @@ button {
 }
 
 .address__title {
-  font-family: Rubik500;
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
   font-size: 20px;
   line-height: 30px;
   text-align: left;
@@ -696,11 +705,12 @@ button {
 
 .call-to-action__title {
   text-align: center;
-  font-family: Rubik700;
   font-size: 48px;
-  font-weight: 700;
-  line-height: 50px;
   color: rgb(12, 18, 45);
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
 }
 
 .call-to-action__description {
@@ -785,7 +795,10 @@ button {
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-family: Rubik500;
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
 }
 
 .footer__nav--follow-us {
@@ -795,7 +808,10 @@ button {
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-family: Rubik500;
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
 }
 
 .footer__nav--title {
