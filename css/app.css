@@ -2,25 +2,25 @@
   font-family: "Rubik500";
   font-style: normal;
   font-weight: 500;
-  src: url(../../fonts/Rubik-VariableFont_wght.ttf);
+  src: url(./dist/fonts/Rubik-VariableFont_wght);
 }
 @font-face {
   font-family: "Rubik700";
   font-style: normal;
   font-weight: 700;
-  src: url(../../fonts/Rubik-VariableFont_wght.ttf);
+  src: url(./dist/fonts/Rubik-VariableFont_wght);
 }
 @font-face {
   font-family: "Open Sans500";
   font-style: normal;
   font-weight: 500;
-  src: url(../../fonts/OpenSans-VariableFont_wdth\,wght.ttf);
+  src: url(./dist/fonts/OpenSans-VariableFont_wdth.ttf);
 }
 @font-face {
   font-family: "Open Sans700";
   font-style: normal;
   font-weight: 700;
-  src: url(../../fonts/OpenSans-VariableFont_wdth\,wght.ttf);
+  src: url(./dist/fonts/OpenSans-VariableFont_wdth.ttf);
 }
 .container {
   max-width: 1140px;
@@ -28,7 +28,17 @@
   padding: 20px 20px 0 20px;
 }
 
-h1, h2, h3, h4, h5, h6, p, ul, li, a, button {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li,
+a,
+button {
   margin: 0;
   padding: 0;
 }
@@ -117,7 +127,7 @@ h1, h2, h3, h4, h5, h6, p, ul, li, a, button {
   top: 0;
   right: 0;
   left: 40%;
-  background-image: url(../img/images/header-background.png);
+  background-image: url(../assets/images/header-background.png);
   height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
@@ -146,7 +156,7 @@ h1, h2, h3, h4, h5, h6, p, ul, li, a, button {
   width: 24px;
   height: 24px;
   background-size: cover;
-  background-image: url(../img/icons/icon-burger-menu.svg);
+  background-image: url(./../assets/icons/icon-burger-menu.svg);
 }
 
 .menu {
@@ -179,7 +189,7 @@ h1, h2, h3, h4, h5, h6, p, ul, li, a, button {
 }
 .menu__icon {
   display: block;
-  background-image: url(../img/icons/icon-close.svg);
+  background-image: url(./../assets/icons/icon-close.svg);
   width: 24px;
   height: 24px;
   background-size: cover;
