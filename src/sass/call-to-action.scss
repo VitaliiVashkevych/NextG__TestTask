@@ -8,11 +8,9 @@
 
 .call-to-action__title {
   text-align: center;
-  font-family: $ffRubik700;
   font-size: 48px;
-  font-weight: 700;
-  line-height: 50px;
   color: $fc-main;
+  @include ffRubik700;
 }
 
 .call-to-action__description {

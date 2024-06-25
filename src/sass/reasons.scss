@@ -42,7 +42,7 @@
   &__title {
     margin-bottom: 30px;
     text-align: left;
-    font-family: $ffRubik700;
+    @include ffRubik700;
     font-size: 48px;
     font-weight: 700;
     line-height: 50px;
@@ -89,7 +89,7 @@
 }
 
 .address__title {
-  font-family: $ffRubik500;
+  @include ffRubik700;
   font-size: 20px;
   line-height: 30px;
   text-align: left;

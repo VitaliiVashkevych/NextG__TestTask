@@ -39,8 +39,8 @@
 
 .goods__title {
   margin-bottom: 26px;
-  font-family: $ffRubik700;
   font-size: 48px;
   line-height: 50px;
   text-align: left;
+  @include ffRubik700;
 }

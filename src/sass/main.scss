@@ -12,7 +12,7 @@
 .section__name {
   color: $bgc-button-yellow;
   margin-bottom: 30px;
-  font-family: $ffRubik500;
+  @include ffRubik500;
 }
 
 .section__title {
@@ -21,10 +21,6 @@
   line-height: 82px;
   text-align: left;
   margin-bottom: 40px;
-  font-family: 'Rubik', sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 500;
-  font-style: normal;
 }
 
 .section__image {
@@ -83,7 +79,7 @@
 
 .benefit__title {
   margin-bottom: 8px;
-  font-family: $ffOpenSans700;
+  @include ffOpenSans700;
 }
 
 .section__learn-more {

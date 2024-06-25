@@ -5,7 +5,7 @@
 	"scripts": {
 		"start": "gulp",
 		"build": "gulp build --production true",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gulp build && gh-pages -d dist"
 	},
 	"devDependencies": {
 		"@babel/core": "^7.4.3",

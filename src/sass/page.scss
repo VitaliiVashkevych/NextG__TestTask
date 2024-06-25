@@ -14,7 +14,7 @@ button {
 }
 
 .page {
-  font-family: $ffOpenSans500;
+  @include ffOpenSans500;
   scroll-behavior: smooth;
   min-width: 400px;
 
