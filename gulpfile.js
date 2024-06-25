@@ -257,25 +257,6 @@ function jsProcess() {
 }
 
 /**
- * Склейка SVG спрайта
- * @returns {*}
- */
-function SVGProcess() {
-  return gulp
-    .src(src.svg)
-    .pipe(
-      svgSprite({
-        mode: {
-          symbol: {
-            sprite: '../sprite.svg',
-          },
-        },
-      }),
-    )
-    .pipe(gulp.dest(dist.img));
-}
-
-/**
  * Копирование файлов из папки public в корень сайта при сборке
  * @returns {*}
  */
@@ -297,7 +278,6 @@ function watchFiles() {
   );
   gulp.watch(src.js + '/app.js', gulp.series(jsProcess, browserSyncReload));
   gulp.watch(src.img, gulp.series(imgProcess, browserSyncReload));
-  gulp.watch(src.svg, gulp.series(SVGProcess, browserSyncReload));
   gulp.watch(src.fonts, gulp.series(copyFonts, browserSyncReload));
   gulp.watch(src.public, gulp.series(publicProcess, browserSyncReload));
 }
@@ -305,7 +285,6 @@ function watchFiles() {
 const build = gulp.series(
   clean,
   gulp.parallel(
-    SVGProcess,
     htmlProcess,
     libsJsProcess,
     jsProcess,
